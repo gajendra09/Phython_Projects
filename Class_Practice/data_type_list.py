@@ -17,3 +17,12 @@ lst = [1, "a", "@", "10", "python@3"]
 print("The value of list is {}".format(lst))
 type_lst = type(lst)
 print("The type of variable lst is {}".format(type_lst))
+
+# Appending in list (only single element can be appended)
+lst.append("Gajendra")
+print("The value of list afetr appending is {}".format(lst))
+
+# Extending in  list  (Only list of elements can be extended)
+ext_lst = ["Vandana", "Abishek"]
+lst.extend(ext_lst)
+print("The value of list after extending is {}".format(lst))
