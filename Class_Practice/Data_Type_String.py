@@ -10,7 +10,7 @@ mutable:  the data can be changed after declaring a variable
 1. list
 2. dictionary
 3. set
-immutable: the cannot be changed after declaring a variable
+immutable: the data cannot be changed after declaring a variable
 1. string
 2. tuple
 """
