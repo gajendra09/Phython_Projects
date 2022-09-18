@@ -30,6 +30,8 @@ print("The another way of creating empty tuple is {}".format(emp_tp))
 tpl = (1, "a", "python@3")
 print("The value of tuple is {}".format(tpl))
 
+type_tpl = type(tpl)
+print("the of tuplle is {}".format(type_tpl))
 
 
 
