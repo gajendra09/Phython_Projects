@@ -34,6 +34,7 @@ print("the value of eleventh index of string x is {}".format(elvnth_ind_str_x))
 twlth_ind_str_x = str_x[12]
 print("the value of twelveth index of string x is {}".format(twlth_ind_str_x))
 
+# negative indexing
 frst_neg_str_x = str_x[-1]
 print("the value of first negative index of string x is {}".format(frst_neg_str_x))
 scnd_neg_str_x = str_x[-2]
@@ -61,6 +62,14 @@ print("the value of twelveth negative index of string x is {}".format(twlth_neg_
 trtnth_neg_str_x = str_x[-13]
 print("the value of thirteenth negative index of string x is {}".format(trtnth_neg_str_x))
 
+# slicing
+slc_zer_to_frth_ind = str_x[0:5]
+print("the slicing value from zero to fourth index of string x is {}".format(slc_zer_to_frth_ind))
+slc_scnd_to_ninth_ind = str_x[2:10]
+print("the slicing value from second to ninth index of string x is {}".format(slc_scnd_to_ninth_ind))
+slc_sxth_to_twlth_ind = str_x[6:13]
+print("the slicing value from sixth to twelveth index of string x is {}".format(slc_sxth_to_twlth_ind))
+
 
 str_y = "Python@3.7"
 len_str_y = len(str_y)
@@ -87,6 +96,8 @@ print("the value of eighth index of string y is {}".format(egth_ind_str_y))
 ninth_ind_str_y = str_y[9]
 print("the value of ninth index of string y is {}".format(ninth_ind_str_y))
 
+# negative indexing
+
 frst_neg_str_y = str_y[-1]
 print("the value of first negative index of string y is {}".format(frst_neg_str_y))
 scnd_neg_str_y = str_y[-2]
@@ -108,7 +119,11 @@ print("the value of ninth negative index of string y is {}".format(ninth_neg_str
 tnth_neg_str_y = str_y[-10]
 print("the value of tenth negative index of string y is {}".format(tnth_neg_str_y))
 
-
+# slicing
+slc_frst_to_frth_ind = str_y[1:5]
+print("the slicing value of first to fourth index of string y is {}".format(slc_frst_to_frth_ind))
+slc_thrd_to_ninth_ind = str_y[3:10]
+print("the slicing value of third to ninth index of string y is {}".format(slc_thrd_to_ninth_ind))
 
 str_z = "DataType"
 len_str_z = len(str_z)
@@ -131,6 +146,8 @@ print("the value of sixth index of string z is {}".format(sxth_ind_str_z))
 sevnth_ind_str_z = str_z[7]
 print("the value of seventh index of string z is {}".format(sevnth_ind_str_z))
 
+# negative indexing
+
 frst_neg_str_z = str_z[-1]
 print("the value of first negative index of string z is {}".format(frst_neg_str_z))
 scnd_neg_str_z = str_z[-2]
@@ -148,6 +165,12 @@ print("the value of seventh negative index of string z is {}".format(snth_neg_st
 egth_neg_str_z = str_z[-8]
 print("the value of eighth negative index of string z is {}".format(egth_neg_str_z))
 
-
+# slicing
+slc_zer_to_svnth_ind = str_z[0:8]
+print("the slicing value of zero to seventh imndex of string z is {}".format(slc_zer_to_svnth_ind))
+slc_zer_to_thrd_ind = str_z[0:4]
+print("the slicing value of zero to third index of string z is {}".format(slc_zer_to_thrd_ind))
+slc_frth_to_svnth_ind = str_z[4:8]
+print("the slicing value of fourth to seventh index of string z is {}".format(slc_frth_to_svnth_ind))
 
 

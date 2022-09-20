@@ -24,3 +24,18 @@ print("the value of second index of tuple is {}".format(scnd_ind_tpl))
 thrd_ind_tpl = tpl[3]
 print("the value of third index of tupple is {}".format(thrd_ind_tpl))
 
+# negative indexing
+frst_neg_tpl_ind = tpl[-1]
+print("the value of first negative index of tuple is {}".format(frst_neg_tpl_ind))
+scnd_neg_tpl_ind = tpl[-2]
+print("the value of second negative index of tuple is {}".format(scnd_neg_tpl_ind))
+thrd_neg_tpl_ind = tpl[-3]
+print("the value of third negative index of tuple is {}".format(thrd_neg_tpl_ind))
+frth_neg_tpl_ind = tpl[-4]
+print("the value of fourth negative index of tuple is {}".format(frth_neg_tpl_ind))
+
+# slicing of a tuple
+slc_frst_to_third_tpl = tpl[1:4]
+print("the slicing value from first to third index of tuple is {}".format(slc_frst_to_third_tpl))
+slc_zero_to_second_tpl = tpl[0:3]
+print("the slicing value from zeroth to second index of tuple is {}".format(slc_zero_to_second_tpl))
