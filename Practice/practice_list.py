@@ -71,4 +71,19 @@ slc_scnd_to_ninth_ind = lst[2:10]
 print("the slicing value from second to ninth index is {}".format(slc_scnd_to_ninth_ind))
 slc_frst_to_sxth_ind = lst[1:7]
 print("the slicing value from first to sixth index is {}".format(slc_frst_to_sxth_ind))
+slc_neg_ind_ = lst[-10:-1]
+print("the value is {}".format(slc_neg_ind_))
+
+
+lst_x = ["Vandana", "Abhishek", "Gajendra", "Manasa"]
+rev_lst_x = lst_x[0][::-1], lst_x[1][::-1], lst_x[2][::-1], lst_x[3][::-1]
+print("the value of reversed list is {}".format(rev_lst_x))
+
+frst_rev_lst_x = lst_x[0][::-1]
+scnd_rev_lst_x = lst_x[1][::-1]
+thrd_rev_lst_x = lst_x[2][::-1]
+frth_rev_lst_x = lst_x[3][::-1]
+print("the value of reversed list x is {}, {}, {}, {}".format(frst_rev_lst_x, scnd_rev_lst_x, thrd_rev_lst_x, frth_rev_lst_x))
+
+
 

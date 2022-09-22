@@ -173,4 +173,5 @@ print("the slicing value of zero to third index of string z is {}".format(slc_ze
 slc_frth_to_svnth_ind = str_z[4:8]
 print("the slicing value of fourth to seventh index of string z is {}".format(slc_frth_to_svnth_ind))
 
+# reverse slicing
 

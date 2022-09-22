@@ -89,3 +89,46 @@ print("The value of slicing from second to fifth index of a string is {}".format
 
 str_four_to_five = str[4:6]
 print("The value of slicing from fourth to fifth index of string is {}".format(str_four_to_five))
+
+rev_one = str[-5:-1]
+print("The value of reversing string is {}".format(rev_one))
+
+rev_to_rev = str[1:-2]
+print("The value of reverste to reverse string is {}".format(rev_to_rev))
+
+rev_to_lst = str[-5::]
+print("The value till last with reverse indexing is {}".format(rev_to_lst))
+
+# string reversing
+str_rev = str[::-1]
+print("The value of reversed string is {}".format(str_rev))
+
+print("The value of string with two colons is {}".format(str[::]))
+
+# String capitalize
+str_x = "welcome to python"
+print("The value of string after capitalising is {}".format(str_x.capitalize()))
+
+# count of a substring in a string
+str_y = "Welcome to python and to class"
+# print(len(str_y))
+print("The count of string to in a given string is {}".format(str_y.count("to")))
+print("The count of string o in a given string is {}".format(str_y.count("o")))
+
+# find in string
+print("The position of string to starting from is {}".format(str_x.find("to")))
+print("The position of string to starting from is {}".format(str_y.find("to")))
+
+# index in string
+print("The position of string to starting from is {}".format(str_x.index("to")))
+print("The position of string to starting from is {}".format(str_x.index("to", 7, 12)))
+print("The position of string to starting from is {}".format(str_y.index("to", 7, 27)))
+
+# startswith in string
+print("The string startswith w is {}".format(str_x.startswith("w")))
+print("The string startswith w is {}".format(str_x.startswith("p")))
+
+# endswith inn string
+print("The string endswith w is {}".format(str_x.endswith("w")))
+print("The string endswith w is {}".format(str_x.endswith("n")))
+

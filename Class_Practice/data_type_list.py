@@ -26,3 +26,13 @@ print("The value of list afetr appending is {}".format(lst))
 ext_lst = ["Vandana", "Abishek"]
 lst.extend(ext_lst)
 print("The value of list after extending is {}".format(lst))
+
+
+lst_y = [1, "python"]
+# print thon from list
+ind_lst_y= lst_y[1]
+# print(lst_y[1][2:6])
+sec_to_fif_ind_lst_y = ind_lst_y[2:6]
+print("The indexing of first element of list is {}".format(sec_to_fif_ind_lst_y))
+print("The type of zeroeth index value of list is {}".format(type(lst_y[0])))
+print("The type of first index value of list is {}".format(type(lst_y[1])))
