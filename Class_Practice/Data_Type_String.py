@@ -132,3 +132,66 @@ print("The string startswith w is {}".format(str_x.startswith("p")))
 print("The string endswith w is {}".format(str_x.endswith("w")))
 print("The string endswith w is {}".format(str_x.endswith("n")))
 
+# replace in string
+str_sen = "Basket contains an apples, banana and oranges"
+print("The value of string before replacement is {}".format(str_sen))
+rep_str = str_sen.replace("banana", "grapes")
+print("The value of string after replacing is {}".format(rep_str))
+
+#  split  and join function
+spl_str_spac = str_sen.split(" ")
+print("The value after splitting spaces is {}".format(spl_str_spac))
+
+join_spl_ele = ":".join(spl_str_spac)
+print("the vallue of string after joining is {}".format(join_spl_ele))
+jn_ele = "".join(spl_str_spac)
+print("the value of string without space is {}".format(jn_ele))
+
+# lower case in string
+str_z = "Hello wORld"
+lower_str = str_z.lower()
+print("the value of string with lower case is {}".format(lower_str))
+
+# upper case in string
+upp_str = str_z.upper()
+print("The value of string after converting to upper case is {}".format(upp_str))
+
+# swapcase in string
+swap_str = str_z.swapcase()
+print("the value of string after swaping is {}".format(swap_str))
+
+# check isalpha, isnumeric, isupper, islower, isalnum, isdecimal
+str1 = "python"
+str2 = "123"
+str3 = "python36"
+str4 = "WelcoMe"
+
+is_alpha_str = str1.isalpha()
+print("The given string is alpah: {}".format(is_alpha_str))
+is_not_alpha = str1.isnumeric()
+print("The given string is alpah: {}".format(is_not_alpha))
+
+is_num_str = str2.isnumeric()
+print("The given string is numeric: {}".format(is_num_str))
+
+is_not_num = str2.isalpha()
+print("The given string is numeric: {}".format(is_not_num))
+
+is_alphnum = str3.isalnum()
+print("The given string is alpha numeric: {}".format(is_alphnum))
+
+is_lower = str4.islower()
+print("The given string is lower: {}".format(is_lower))
+is_upper = str4.isupper()
+print("The given string is upper: {}".format(is_upper))
+
+# string concatenation
+str_a = "welcome"
+str_b = "to"
+str_c = "python"
+str_space = " "
+# o/p: "Welcome to python"
+str_con1 = str_a+str_space+str_b+str_space+str_c
+print("The value of string after concatenation is {}".format(str_con1))
+str_con2 = str_a+" "+str_b+" "+str_c
+print("The value of string after concatenation is {}".format(str_con2))

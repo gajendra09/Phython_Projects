@@ -86,4 +86,8 @@ frth_rev_lst_x = lst_x[3][::-1]
 print("the value of reversed list x is {}, {}, {}, {}".format(frst_rev_lst_x, scnd_rev_lst_x, thrd_rev_lst_x, frth_rev_lst_x))
 
 
+# rev_lst = [i[::-1] for i in lst_x]
+# print(rev_lst)
+
+
 
