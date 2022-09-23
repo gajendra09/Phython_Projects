@@ -33,5 +33,13 @@ print("The value of tuple is {}".format(tpl))
 type_tpl = type(tpl)
 print("the of tuplle is {}".format(type_tpl))
 
+len_tpl = len(tpl)
+print("The length of tuple is {}".format(len_tpl))
+
+tple = (6, 2, 0, 2, 1)
+min_num = min(tple)
+max_num = max(tple)
+print("The maximum value in tuple is {}".format(max_num))
+print("The minimum value in tuple is {}".format(min_num))
 
 
