@@ -38,7 +38,7 @@ get_ele3 = dict2.get("Age")
 print("The value of age in dict2 is {}".format(get_ele3))
 
 # Fetch keys and values from dictionary
-get_keys =dict1.keys()
+get_keys = dict1.keys()
 print("The value of keys are {}".format(get_keys))
 print("The value of keys are {}".format(list(get_keys)))
 get_values = list(dict1.values())
