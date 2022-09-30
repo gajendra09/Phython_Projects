@@ -6,7 +6,7 @@ lst_a = [1, 3, 5, 8]
 for i in lst_a:
     print(i)
 
-dict_a = {"a":1, "b":2}
+dict_a = {"a": 1, "b": 2}
 for keys, values in dict_a.items():
     print(keys)
     print(values)
@@ -37,10 +37,16 @@ for i in str_b:
     rev_str = i+rev_str
     print("the rev_str value after iteration is {}".format(rev_str))
 
+str_b = "welcome to python"
+splt_str = str_b.split(" ")
+rev_lst = []
+for i in splt_str:
+    rev_lst.append(i[::-1])
+rev_str = " ".join(rev_lst)
+print("The reversed string is {}".format(rev_str))
+
+
 print("The value of reversed string is {}".format(rev_str))
 
-"""
-i/p :  str_b = "Welcome to python"
-o/p :  rev_str_b = "emocleW ot nothyp"
 
-"""
+

@@ -1,6 +1,7 @@
 """
 What is set?
-Set is a group of elements enclosted between {}, where set is immutable, unordered and unindexed. Set doesn't contains duplicates
+Set is a group of elements enclosed between {}, where set is immutable, unordered and unindexed.
+Set doesn't contains duplicates
 """
 set1 = {"a", "b", "c", "a"}
 print("The value of set is {}".format(set1))
@@ -36,8 +37,10 @@ print("The value after discard c is {}".format(set1))
 pop_set1 = set1.pop()
 print("The value after pop  is {}".format(set1))
 
-# clear_set = set1.clear()
-# print("The set after clearing is {}".format(clear_set))
+clear_set = set1.clear()
+print("The set after clearing is {}".format(set1))
+
+
 
 # union and intersection
 set_a = {"a", "b", 1, 2}
