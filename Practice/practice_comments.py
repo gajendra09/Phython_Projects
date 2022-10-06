@@ -32,7 +32,7 @@ Datatype are of two types
   2.tuple
 
 String : It is a sequence of elements which can be numeric alphabet and alphanumeric which is represented between double
-         quation.
+         quotation.
          It is a ImMutable
 List : List is a group of elements which can be numbers, alphabets, alphanumeric or combination of all which is 
        represented between square braces.

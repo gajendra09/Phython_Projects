@@ -25,8 +25,22 @@ for i in list_a:
 print(cub_lst)
 
 
+lst_a = [2, 4, 6, 9]
+lst_b = [3, 4, 5, 2, 4]
 
 
+lst = [3, 5, 1, 99, 2, 0]
+lst.sort()
+print("List after sorting  {}".format(lst))
+desc_lst = []
+for i in lst:
+    desc_lst.insert(0, i)
+    # desc_lst = [i]+desc_lst
+print("descending order of list is {}".format(desc_lst))
 
-
+dicta = {"a": 1, "b": "2"}
+val_typ = []
+for key, val in dicta.items():
+    val_typ.append(type(val))
+print("The type of values in dictionary is {}".format(val_typ))
 

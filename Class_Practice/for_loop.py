@@ -46,7 +46,47 @@ rev_str = " ".join(rev_lst)
 print("The reversed string is {}".format(rev_str))
 
 
+
+
 print("The value of reversed string is {}".format(rev_str))
 
+# Range function
+lst = list(range(10))
+print("the list of values of range is {}".format(lst))
+lst_a = list(range(1, 10))
+print("The list of range of values from 1 to  10 is {}".format(lst_a))
+lst_step = list(range(0, 110, 20))      # initial point, end point, step size
+print("The list of values from 0 to 100 with stepsize 20 is {}".format(lst_step))
 
+def summation(init_pnt, end_pnt):
+    sum = 0
+    for i in range(init_pnt, end_pnt):
+        sum = sum +i
+    return sum
+
+print("the summation of values from 0 to 10 is {}".format(summation(0, 10)))
+print("The summation of values from 0 to 100 is {}".format(summation(0, 100)))
+
+# inner for loops
+lst1 = [1, 2, 3, 4]
+lst2 = [5, 6, 7, 8]
+for i in lst1:
+    for j in lst2:
+         print(i, j)
+
+
+
+sum_lst = []
+for i in range(len(lst1)):
+    sum = lst1[i] + lst2[i]
+    sum_lst.append(sum)
+print("The sum of each elements of two two list is {}".format(sum_lst))
+# try:
+#     sum_lst = []
+#     for i in range(len(lst1)):
+#         sum = lst1[i] + lst2[i]
+#         sum_lst.append(sum)
+#     print("The sum of each elements of two two list is {}".format(sum_lst))
+# except Exception as e:
+#     print(e)
 

@@ -90,4 +90,4 @@ print("the value of reversed list x is {}, {}, {}, {}".format(frst_rev_lst_x, sc
 # print(rev_lst)
 
 
-
+list_a = [2, 3, 4, 6, 8]

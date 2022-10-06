@@ -175,3 +175,6 @@ print("the slicing value of fourth to seventh index of string z is {}".format(sl
 
 # reverse slicing
 
+str_a = "Hello"
+rev_str_a = str_a[-5::]
+print(rev_str_a)

@@ -94,7 +94,7 @@ rev_one = str[-5:-1]
 print("The value of reversing string is {}".format(rev_one))
 
 rev_to_rev = str[1:-2]
-print("The value of reverste to reverse string is {}".format(rev_to_rev))
+print("The value of reverse to reverse string is {}".format(rev_to_rev))
 
 rev_to_lst = str[-5::]
 print("The value till last with reverse indexing is {}".format(rev_to_lst))

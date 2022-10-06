@@ -27,9 +27,6 @@ def rever_str(str):
 str_c = rever_str("Welcome to python")
 print("the reversed value of string is {}".format(str_c))
 
-# write a method to sum of all elements in list
-# write a method to find cubes of elements in list
-
 
 
 
