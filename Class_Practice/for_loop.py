@@ -44,11 +44,28 @@ for i in splt_str:
     rev_lst.append(i[::-1])
 rev_str = " ".join(rev_lst)
 print("The reversed string is {}".format(rev_str))
-
-
-
-
 print("The value of reversed string is {}".format(rev_str))
+
+lst = [3, 5, 1, 99, 2, 0]
+lst.sort()
+print("List after sorting  {}".format(lst))
+desc_lst = []
+for i in lst:
+    desc_lst.insert(0, i)
+    # desc_lst = [i]+desc_lst
+print("descending order of list is {}".format(desc_lst))
+
+dicta = {"a": 1, "b": "2"}
+val_typ = []
+for key, val in dicta.items():
+    val_typ.append(type(val))
+print("The type of values in dictionary is {}".format(val_typ))
+
+key_typ = []
+for key, val in dicta.items():
+    key_typ.append(type(key))
+print("the type of keys in dictionary is {}".format(key_typ))
+
 
 # Range function
 lst = list(range(10))
@@ -73,8 +90,6 @@ lst2 = [5, 6, 7, 8]
 for i in lst1:
     for j in lst2:
          print(i, j)
-
-
 
 sum_lst = []
 for i in range(len(lst1)):

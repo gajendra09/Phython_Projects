@@ -44,3 +44,19 @@ for key, val in dicta.items():
     val_typ.append(type(val))
 print("The type of values in dictionary is {}".format(val_typ))
 
+# range function
+
+lst = list(range(10))
+print("the range value of list is {}".format(lst))
+
+lst_x = list(range(20, 45))
+print("the range value of list is {}".format(lst_x))
+
+"""
+step size : it tells us how many steps we skip from original sequence
+   syntax : range(start, end, step)
+"""
+
+lst_y = list(range(0, 100, 5))
+print("the range value of step list is {}".format(lst_y))
+
