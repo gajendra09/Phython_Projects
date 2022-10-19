@@ -101,7 +101,7 @@ print("The value of list after sorting is {}".format(lst_c))
 # zip in list
 lsta = ["a", "b"]
 lstb = [1, 2]
-lst_zip =  list(zip(lsta, lstb))
+lst_zip = list(zip(lsta, lstb))
 print("The value after zipping 2 lists is {}".format(lst_zip))
 
 sum_lstc = sum(lst_c)

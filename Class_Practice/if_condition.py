@@ -28,11 +28,6 @@ else:
     print("c is largest")
 
 
-
-
-
-
-
 lst = [3, 0, 5, 4]
 len_lst = len(lst)
 for i in range(len_lst):

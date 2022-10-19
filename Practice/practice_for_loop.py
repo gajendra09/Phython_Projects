@@ -60,3 +60,13 @@ step size : it tells us how many steps we skip from original sequence
 lst_y = list(range(0, 100, 5))
 print("the range value of step list is {}".format(lst_y))
 
+
+lst = [" ABC ", "hcb", " xyz"]
+Outp: lst =["ABC","hcb","xyz"]
+
+lst = [" ABC ", " hcb", "xyz"]
+for i in range(len(lst)):
+    if " " in lst[i]:
+        str = lst[i].replace(" ", "")
+        lst[i] = str
+print(lst)
