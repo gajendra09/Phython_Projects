@@ -71,7 +71,7 @@ lst_dup= [1, 4, 5, 2]
 """
 str_x = "welcome to the world of python"
 for i in range(0, 30, 3):
-    print(str_x[i])
+    print("the three multiple value are {}".format(str_x[i]))
 
 lst_y = ["Malayalam", "area", "aba", "xyz", "see", "1221", "god"]
 count = 0
@@ -107,7 +107,7 @@ lst_a = [4, 25, -2, 0, -9, 10, 3, -2, 4, 1]
 lst_positive = []
 lst_negative = []
 for i in lst_a:
-    if i > 0 and i not in lst_positive:
+    if i >= 0 and i not in lst_positive:
         lst_positive.append(i)
     if i < 0 and i not in lst_negative:
         lst_negative.append(i)
@@ -121,14 +121,57 @@ for i in str_a:
         str_dup = i + str_dup
 print(str_dup)
 
+lst_b = [5, 56, 17, 87, 34, 2, 76]
+lst_b.sort()
+lst_b.reverse()
+print(lst_b)
+N = int(input("N ="))
+lar_lst = []
+for i in range(N):
+    lar_lst.append(lst_b[i])
+print(lar_lst)
 
+def large_number(list, N):
+    large_lst = []
+    list.sort()
+    list.reverse()
+    for i in range(N):
+        large_lst.append(list[i])
+    return large_lst
 
+lst_c = large_number([54, 4, 76, 89, 9], 3)
+print("the largest number in the list is {}".format(lst_c))
 
+str = "abcdfcdaecbajadej"
+str_dict = {}
+for i in str:
+    cnt = str.count(i)
+    str_dict[i] = cnt
+print(str_dict)
 
+str_a = " hai how are you"
+lst_x = ["a", "e", "i", "o", "u"]
+str_dic = {}
+for i in str_a:
+    if i in lst_x:
+        cont = str_a.count(i)
+        str_dic[i] = cont
+print(str_dic)
 
+str_b = " hai how are you"
+lst = ["a", "e", "i", "o", "u"]
+for i in str_a:
+    if i in lst:
+        str_b = str_b.replace(i, "")
+print(str_b)
 
-
-
+n = 17
+for i in range(2, n):
+    if n % i == 0:
+        print("n is not a prime")
+        break
+else:
+    print(("n is a prime number"))
 
 
 
