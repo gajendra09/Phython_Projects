@@ -9,7 +9,6 @@ for i in splt_str:
     rev_lst.append(i[::-1])
 
 rev_lst = " ".join(rev_lst)
-
 print(rev_lst)
 
 list_a = [2, 3, 4, 8]
@@ -17,18 +16,18 @@ sum_list_a = 0
 for i in list_a:
     sum_list_a = i+sum_list_a
 print(sum_list_a)
-
+lst_sum = [0+i for i in list_a]
+print(lst_sum)
 
 cub_lst = []
 for i in list_a:
     cub_lst.append(i*i*i)
 print(cub_lst)
-
+cub_lst_cm = [i*i*i for i in list_a]
+print(cub_lst_cm)
 
 lst_a = [2, 4, 6, 9]
 lst_b = [3, 4, 5, 2, 4]
-
-
 lst = [3, 5, 1, 99, 2, 0]
 lst.sort()
 print("List after sorting  {}".format(lst))
@@ -62,11 +61,13 @@ print("the range value of step list is {}".format(lst_y))
 
 
 lst = [" ABC ", "hcb", " xyz"]
-Outp: lst =["ABC","hcb","xyz"]
+Outp: lst =["ABC", "hcb", "xyz"]
 
 lst = [" ABC ", " hcb", "xyz"]
-for i in range(len(lst)):
-    if " " in lst[i]:
-        str = lst[i].replace(" ", "")
-        lst[i] = str
-print(lst)
+# for i in range(len(lst)):
+#     if " " in lst[i]:
+#         str = lst[i].replace(" ", "")
+#         lst[i] = str
+# print(lst)
+lst_cm = [lst[i].replace(" ", "") if " " in lst[i] else lst[i] for i in range(len(lst)) ]
+print(lst_cm)

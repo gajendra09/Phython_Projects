@@ -31,7 +31,7 @@ print("the value of age is {}".format(get_elem1))
 # get_elem2 = dict1["a"]
 # print("the value of a in dict1 is {}".format(get_elem2))
 
-get_ele2 = dict2.get("a")                   # If suppose wer are trying to print value of a key which is not in dictionary,at this point it doenot throws error, but it returns None
+get_ele2 = dict2.get("a")                   # If suppose we are trying to print value of a key which is not in dictionary,at this point it doesnot throws error, but it returns None
 print("The value of a ia {}".format(get_ele2))
 
 get_ele3 = dict2.get("Age")
@@ -62,3 +62,4 @@ lst1 = ["vegetables", "fruits"]
 lst2 = [["beans", "carrot"], ["Apple", "Orange"]]
 dict3 = dict(zip(lst1, lst2))               # list can be a values for dictionary but not keys, because keys are immutable and lists are mutable hence list cannot be a key for dictionary
 print("The value of dictionary from two lists is {}".format(dict3))
+

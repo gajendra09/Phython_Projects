@@ -34,14 +34,13 @@ for i in range(len_lst):
     for j in range(i + 1, len_lst):
         if lst[i] > lst[j]:
             lst[i], lst[j] = lst[j], lst[i]
-print(lst)
+print("the ascending order of a list is {}".format(lst))
 
-
-for i in range(len_lst):
-    for j in range(i + 1, len_lst):
+for i in range(len(lst)):
+    for j in range(i + 1, len(lst)):
         if lst[i] < lst[j]:
             lst[i], lst[j] = lst[j], lst[i]
-print(lst)
+print("the descending order of the list is {}".format(lst))
 
 # find the list of even numbers and list of odd number from given list
 lst_a = [2, 6, 9, 13, 22, 10, 33, 21, 4, 8]
@@ -50,7 +49,6 @@ lst_odd = []
 for i in lst_a:
     if i % 2 == 0:
         lst_evn.append(i)
-
     else:
         lst_odd.append(i)
 

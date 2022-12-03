@@ -28,7 +28,7 @@ def cube_list(list):
     cub_lst = []
     for i in list:
         cub_lst.append(i*i*i)
-    return cub_lst
+    return cub_ls
 
 list_x = cube_list([2, 3, 4, 5])
 print("the cube values are {}".format(list_x))
@@ -54,9 +54,11 @@ print("the descending order value of list is {}".format(list_c))
 
 def dict_datatype(dict):
     val_typ = []
+    key_typ = []
     for key, val in dict.items():
         val_typ.append(type(val))
-    return val_typ
+        key_typ.append(type(key))
+    return val_typ, key_typ
 
 dict_a = dict_datatype({"a": 1, "b": "2"})
 print("the type of the dictionary is {}".format(dict_a))

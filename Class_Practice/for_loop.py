@@ -6,12 +6,15 @@ lst_a = [1, 3, 5, 8]
 for i in lst_a:
     print(i)
 
+lst_a_cm = [i for i in lst_a]
+print(lst_a_cm)
+
 dict_a = {"a": 1, "b": 2}
 for keys, values in dict_a.items():
     print(keys)
     print(values)
 
-dict_b = {"vegetables":["Tomato", "Onion"], "fruits":["Apple", "Orange"]}
+dict_b = {"vegetables": ["Tomato", "Onion"], "fruits": ["Apple", "Orange"]}
 for k, v in dict_b.items():
     print(k)
     print(v)
@@ -46,6 +49,9 @@ rev_str = " ".join(rev_lst)
 print("The reversed string is {}".format(rev_str))
 print("The value of reversed string is {}".format(rev_str))
 
+str_b_cm = [i[::-1] for i in str_b.split(" ")]
+print(" ".join(str_b_cm))
+
 lst = [3, 5, 1, 99, 2, 0]
 lst.sort()
 print("List after sorting  {}".format(lst))
@@ -55,11 +61,15 @@ for i in lst:
     # desc_lst = [i]+desc_lst
 print("descending order of list is {}".format(desc_lst))
 
+
 dicta = {"a": 1, "b": "2"}
 val_typ = []
 for key, val in dicta.items():
     val_typ.append(type(val))
 print("The type of values in dictionary is {}".format(val_typ))
+
+dict_a_cm = [type(j) for i, j in dicta.items()]
+print(dict_a_cm)
 
 key_typ = []
 for key, val in dicta.items():
@@ -91,11 +101,16 @@ for i in lst1:
     for j in lst2:
          print(i, j)
 
+lst_inner = [[i, j] for j in lst2 for i in lst1]
+print(lst_inner)
+
 sum_lst = []
 for i in range(len(lst1)):
     sum = lst1[i] + lst2[i]
     sum_lst.append(sum)
 print("The sum of each elements of two two list is {}".format(sum_lst))
+
+
 # try:
 #     sum_lst = []
 #     for i in range(len(lst1)):
