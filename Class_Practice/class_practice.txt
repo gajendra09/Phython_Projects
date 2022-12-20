@@ -1,0 +1,32 @@
+Class CreatePass():
+    pass
+
+class Sum():
+    def add(a,b):
+        sum = a+b
+        return sum
+
+s = "I Sabyasachi, Techno Exponent, sabyasachi Exponent"
+dic = {}
+step = s.replace(",","")
+s1 = step.lower()
+lst = s1.split(" ")
+
+for i in lst:
+    sent = lst.count(i)
+    if i not in dic.keys():
+        dic[i] =sent
+print(dic)
+
+class ArithmeticOperations():
+    def _init_(self, a,b):
+         self.a =a
+         self.b =b
+    def sum(self):
+        return a+b
+    def diff(self):
+        return a-b
+    def prod(self):
+        return a*b
+    def div(self):
+        return a/b

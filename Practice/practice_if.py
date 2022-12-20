@@ -79,10 +79,9 @@ lst_y = ["Malayalam", "area", "aba", "xyz", "see", "1221", "god"]
 #     if i[0] == i[-1] and len(i) > 1:
 #         print("palindrome elements in the list are {}".format(i))
 #         count = 1 + count
-# print("the count of of palindrome elements in list are {}".format(count))
-lsty_cm = [i for i in lst_y if i[0] == i[-1] and len(i)>1]
+# print("the count of palindrome elements in list are {}".format(count))
+lsty_cm = [i for i in lst_y if i[0] == i[-1] and len(i) > 1]
 print("the palindrome elements are {} and count is {}".format(lsty_cm, len(lsty_cm)))
-
 
 num = 48
 str_num = str(num)
@@ -93,17 +92,15 @@ int_rev_num = int(rev_num)
 diff = num - int_rev_num
 print("the difference between two numbers is {}".format(diff))
 
-
 nm = 56
 str_nm = str(nm)
 rev_nm = ""
 for i in str_nm:
-    rev_nm = i+rev_nm
+    rev_nm = i + rev_nm
 print("the value of reversed number is {}".format(rev_nm))
 int_rv_nm = int(rev_nm)
 diff_nm = nm - int_rv_nm
 print("the difference between two numbers is {}".format(diff_nm))
-
 
 lst_a = [4, 25, -2, 0, -9, 10, 3, -2, 4, 1]
 lst_positive = []
@@ -134,6 +131,7 @@ for i in range(N):
     lar_lst.append(lst_b[i])
 print(lar_lst)
 
+
 def large_number(list, N):
     large_lst = []
     list.sort()
@@ -141,6 +139,7 @@ def large_number(list, N):
     for i in range(N):
         large_lst.append(list[i])
     return large_lst
+
 
 lst_c = large_number([54, 4, 76, 89, 9], 3)
 print("the largest number in the list is {}".format(lst_c))
@@ -154,7 +153,6 @@ print(str_dict)
 
 dict_str = {i: str3.count(i) for i in str3}
 print(dict_str)
-
 
 str_a = " hai how are you"
 lst_x = ["a", "e", "i", "o", "u"]
@@ -180,7 +178,7 @@ for i in range(2, n):
         print("n is not a prime")
         break
 else:
-    print(("n is a prime number"))
+    print("n is a prime number")
 
 str_c = "this is India"
 spl_str_c = str_c.split()
@@ -191,15 +189,13 @@ for i in spl_str_c:
 print("the max length string is {}".format(i))
 print("length is {}".format(len(i)))
 
-
 str_w = "Welcome to python"
 spl_str_w = str_w.split()
 max_lent = max(spl_str_w, key=len)
 print("the max length string is {} and length is {}".format(max_lent, len(max_lent)))
 
-dict_a = {"a": 1, "b":2, "c":3}
+dict_a = {"a": 1, "b": 2, "c": 3}
 dict_b = {"e": 5, "c": 4, "d": 5}
-
 
 s = "abcabcbb"
 s_s = ""
@@ -225,7 +221,6 @@ for i in range(2, n):
 else:
     print(("n is a prime number"))
 
-
 # To list prime numbers from range 1 to 50
 prime_num = []
 for j in range(1, 51):
@@ -235,7 +230,6 @@ for j in range(1, 51):
     else:
         prime_num.append(j)
 print(prime_num)
-
 
 # str  = "this is India"
 str1 = "welcome to python"
@@ -251,29 +245,29 @@ print("String {} has max length {}".format(mx_str, mx_ln))
 s = "aaabbccddef"
 index = 0
 str_rep = ""
-while (index<= len(s)-1):
+while (index <= len(s) - 1):
     count = 1
     char = s[index]
     j = index
-    while(j <len(s)-1):
-        if (s[j]==s[j+1]):
-            count = count+1
-            j = j+1
+    while (j < len(s) - 1):
+        if (s[j] == s[j + 1]):
+            count = count + 1
+            j = j + 1
         else:
             break
-    str_rep = str_rep+str(count)+char
-    index = j+1
+    str_rep = str_rep + str(count) + char
+    index = j + 1
 print(str_rep)
 
 dict_a = {"a": 1, "b": 2, "c": 3}
 dict_b = {"e": 5, "c": 4, "d": 5}
 for k in dict_b:
     if k in dict_a:
-        dict_b[k] = dict_b[k]+dict_a[k]
+        dict_b[k] = dict_b[k] + dict_a[k]
 res = dict_a | dict_b
 print(res)
 
-b = [{"name": "Tom", "age":  "10"}, {"name": "Mark", "age": "5"}, {"name": "Pam", "age":  "7"},
+b = [{"name": "Tom", "age": "10"}, {"name": "Mark", "age": "5"}, {"name": "Pam", "age": "7"},
      {"name": "Sam", "age": "12"}]
 dictb = {}
 for i in b:
@@ -290,5 +284,11 @@ d = {"a", "e", "i", "o", "u"}
 vovels_cd = {i: c.count(i) for i in c if i in d}
 print(vovels_cd)
 
-
-
+a = "i sabyasachi , techno exponent , sabyasachi exponent"
+replc = a.replace(",", " ")
+splta = replc.split()
+dicta = {}
+for i in splta:
+    couunt = splta.count(i)
+    dicta[i] = couunt
+print(dicta)

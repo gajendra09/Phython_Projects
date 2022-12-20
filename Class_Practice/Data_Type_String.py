@@ -195,3 +195,8 @@ str_con1 = str_a+str_space+str_b+str_space+str_c
 print("The value of string after concatenation is {}".format(str_con1))
 str_con2 = str_a+" "+str_b+" "+str_c
 print("The value of string after concatenation is {}".format(str_con2))
+
+a = 2**10
+print(a)
+b = "welcome \nto \n\"python\""
+print(b)

@@ -28,7 +28,8 @@ def cube_list(list):
     cub_lst = []
     for i in list:
         cub_lst.append(i*i*i)
-    return cub_ls
+    return cub_lst
+
 
 list_x = cube_list([2, 3, 4, 5])
 print("the cube values are {}".format(list_x))
@@ -172,3 +173,17 @@ def prime_number(int):
 
 num = prime_number(31)
 print(num)
+
+def twosums(nums, target):
+    for i in range(len(nums)):
+        for j in range(i+1,len(nums)):
+            if target - nums[i] == nums[j]:
+                return [i, j]
+    return None
+nums = [2, 4, 5, 8, 11]
+target = 9
+print(twosums(nums, target))
+
+
+
+

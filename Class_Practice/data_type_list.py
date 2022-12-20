@@ -1,6 +1,7 @@
 """
 what is list?
-List is a group of elements which can be alphabets, numbers and alphanumeric or combinations of all which is represented between square braces.
+List is a group of elements which can be alphabets, numbers and alphanumeric or combinations of all which is represented
+ between square braces.
 *** List is mutable
 """
 
@@ -30,7 +31,7 @@ print("The value of list after extending is {}".format(lst))
 
 lst_y = [1, "python"]
 # print thon from list
-ind_lst_y= lst_y[1]
+ind_lst_y = lst_y[1]
 # print(lst_y[1][2:6])
 sec_to_fif_ind_lst_y = ind_lst_y[2:6]
 print("The indexing of first element of list is {}".format(sec_to_fif_ind_lst_y))
@@ -39,7 +40,7 @@ print("The type of first index value of list is {}".format(type(lst_y[1])))
 
 # List concatination
 lst1 = ["a", "b"]
-list2 = [1, 2]
+list2 = ["1", "2"]
 con_lst = lst1 + list2
 print("The value of list after concatinating is {}".format(con_lst))
 
@@ -52,7 +53,7 @@ print("The value of empty list after appending is {}".format(em_lst))
 len_lst = len(con_lst)
 print("The length of list is {}".format(len_lst))
 
-# finding and max and minn number from list
+# finding max and minn number from list
 lst_a = [4, 3, 8, 20, 1, 0]
 max_num = max(lst_a)
 min_num = min(lst_a)
