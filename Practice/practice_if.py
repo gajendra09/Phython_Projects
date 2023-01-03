@@ -292,3 +292,6 @@ for i in splta:
     couunt = splta.count(i)
     dicta[i] = couunt
 print(dicta)
+
+x = list(range(0, 50, 7))
+print(x)
