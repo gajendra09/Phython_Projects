@@ -13,16 +13,16 @@ b = int(input("The value of b is : "))
 c = int(input("The value of c is: "))
 if a > b and a > c:
     print("a is largest number")
-elif b>a and b>c:
+elif b > a and b > c:
     print("b is largest number")
 else:
     print("c is largest number")
-if a>b:
-    if a>c:
+if a > b:
+    if a > c:
         print("a is largest ")
 
-elif b>a:
-    if b>c:
+elif b > a:
+    if b > c:
         print("b is largest")
 else:
     print("c is largest")
@@ -57,4 +57,14 @@ print("the list of odd numbers is {}".format(lst_odd))
 
 
 
+
+def factorial(num):
+    fact = 1
+    while(num!=0):
+        fact *= num
+        num = num - 1
+    print("Factorial is", fact)
+
+num = int(input("Enter number:"))
+factorial(num)
 

@@ -49,9 +49,9 @@ em_lst.append("Deekshitha")
 print("The value of empty list after appending is {}".format(em_lst))
 
 # finding length of list
-
 len_lst = len(con_lst)
 print("The length of list is {}".format(len_lst))
+
 
 # finding max and minn number from list
 lst_a = [4, 3, 8, 20, 1, 0]
